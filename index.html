@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mystical Escape</title>
+    <title>Escape Room</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="game-container">
+    <div id="game-header">
+        <div class="timer-container">
+            <span class="label">Time Left:</span>
+            <span id="timer">20:00</span>
         </div>
-
+        <div class="keys-container">
+            <span class="label">Keys:</span>
+            <span id="key-count">0</span> / 5 🔑
+        </div>
+    </div>
+    <div id="game-container">
+        <div id="game-content">
+            </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
