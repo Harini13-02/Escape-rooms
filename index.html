@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape Room</title>
+    <title>Escape Room Game</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="game-header">
-        <div class="timer-container">
-            <span class="label">Time Left:</span>
-            <span id="timer">20:00</span>
-        </div>
-        <div class="keys-container">
-            <span class="label">Keys:</span>
-            <span id="key-count">0</span> / 5 🔑
-        </div>
+        <div class="header-item">Time Left: <span id="timer"></span></div>
+        <div class="header-item">Keys Collected: <span id="key-count">0</span> / 5</div>
     </div>
     <div id="game-container">
-        <div id="game-content">
-            </div>
+        <div id="game-content"></div>
     </div>
     <script src="script.js"></script>
 </body>
