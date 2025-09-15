@@ -46,7 +46,7 @@ const puzzles = [
     {id: 1, room: 1, title: "The Light Sequence", description: "Four glowing orbs flicker in a specific order. Watch and then repeat the sequence by clicking the orbs.", puzzleType: "light-sequence", sequence: [0, 2, 1, 3, 2, 0], hint: "Focus and remember the order of the flashing lights. If you forget, you can re-watch the sequence."},
     {id: 2, room: 1, title: "The Fragmented Image", description: "A picture has been shattered into pieces. Reassemble it to reveal the next clue.", puzzleType: "jigsaw", image: "images/image_3fe13f.jpg", rows: 3, cols: 3, hint: "Look for the edges and corners of the image first. They are often easier to place."},
     {id: 3, room: 1, title: "The Glyph Grid", description: "A 3x3 grid awaits. Place the symbols so that each one appears exactly once in each row and each column.", puzzleType: "sudoku-like", correctSolution: [['☀️', '🌙', '⭐'], ['⭐', '☀️', '🌙'], ['🌙', '⭐', '☀️']], initialState: [['☀️', '', ''], ['', '', '🌙'], ['', '⭐', '']], symbols: ['☀️', '🌙', '⭐'], hint: "Each symbol must appear exactly once in every row and every column."},
-    {id: 4, room: 2, title: "The Sphinx's Riddle", description: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", puzzleType: "text-input", answer: " map", hint: "It's something you use to find your way."},
+    {id: 4, room: 2, title: "The Sphinx's Riddle", description: "I am a secret ratio that lives in every circle. You can find me by dividing the distance around a circle's edge by the distance straight across its middle.My numbers go on forever without ever repeating.What number am I?", puzzleType: "text-input", answer: "pi", hint: "It's something you use to find your way."},
     {id: 5, room: 2, title: "The Odd One Out", description: "From a list of words, identify the one that doesn't belong. The words are: Red Yellow Pink Blue ", puzzleType: "text-input", answer: "pink", hint: "Think of primary colors!!"},
     {id: 6, room: 2, title: "The Roman Numeral Code", description: "A tablet displays a series of ancient numbers. What is the value of (LXXVI - XXXV) + (XLIV + XVIII) ?", puzzleType: "text-input", answer: "103", hint: "L=50, X=10. Remember that a smaller number before a larger one means subtraction, but after it means addition."},
     {id: 7, room: 3, title: "The Memory Match", description: "Flip two cards at a time to find matching emoji pairs. Find all the pairs to unlock the key.", puzzleType: "memory-match", items: ["🍎", "🍌", "🍒", "🍇"], hint: "Pay attention to where each card is located. A good memory is your best tool."},
@@ -830,4 +830,5 @@ function initializeFinalConundrum(puzzle) {
 
 // Initial call to set up the start page
 renderStartPage();
+
 
